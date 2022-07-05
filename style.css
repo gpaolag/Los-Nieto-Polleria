@@ -1,0 +1,415 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  /* solo para ver el texto hasta que lo acomode */
+  /*Estilo para el header de todas las páginas */
+header {
+    font-family: "Mali", cursive;
+    background: rgba(233, 232, 244, 0.304);
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+a {
+    cursor: pointer;
+  }
+.btn-pidelo{
+    background-color: #ea9310;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+  }
+.btn-pidelo:hover{
+    background-color: #e9b05c;
+  }
+.btn-slider{
+    display: flex;
+    margin: 30px 10px;
+  }
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 992px;
+    margin: 0 auto;
+  }
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  #iconoHeader {
+    margin-left: 30px;
+    align-self: flex-start;
+  }
+  .studio {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 800;
+    font-size: 50px;
+    padding: 20px;
+    text-shadow: 0 0 12px #000, 0 0 15px #0000ff;
+  }
+  .subtitulo {
+    font-family: "Mali", cursive;
+    font-size: 22px;
+    padding-left: 20px;
+    text-shadow: 0 0 12px #000, 0 0 15px #0000ff;
+  }
+  .nav-menu,
+  .listaDirectores {
+    display: flex;
+    margin-right: 30px;
+    list-style: none;
+  }
+  .nav-menu-item {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 10px;
+    line-height: 60px;
+  }
+  .nav-menu-link {
+    padding: 8px 10px;
+    border-radius: 10px;
+  }
+  .nav-menu-link:hover,
+  .submenuDirector_items:hover {
+    background-color: #6b7382;
+    transition: 0.5s;
+  }
+  .nav-toggle {
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 50px;
+    display: none;
+  }
+
+  /*---------------Desde acá estoy agregando el estilo para el carrusel -------------------- */
+  #contenedorCarrusel,
+  .carruselPeliculas {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: auto;
+    overflow: hidden;
+  }
+  #contenedorCarrusel .flechaIzquierda,
+  #contenedorCarrusel .flechaDerecha {
+    position: absolute;
+    border: none;
+    background: rgb(255, 255, 255, 0.3);
+    font-size: 40px;
+    height: 35%;
+    align-self: center;
+    line-height: 40px;
+    width: 50px;
+    color: #000;
+    cursor: pointer;
+    z-index: 100px;
+    transition: 0.2s ease all;
+  }
+  #contenedorCarrusel .flechaIzquierda {
+    left: 0;
+  }
+  #contenedorCarrusel .flechaDerecha {
+    right: 0;
+  }
+  #contenedorCarrusel .flechaIzquierda:hover,
+  #contenedorCarrusel .flechaDerecha:hover {
+    background: rgba(255, 255, 255, 0.7);
+    transition: 0.5s;
+  }
+  #contenedorCarrusel {
+    height: 100%;
+    width: 70%;
+    padding: 20px 0;
+  }
+  #contenedorCarrusel .carruselPeliculas {
+    display: flex;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+  }
+  /*---------------Hasta acá estoy agregando el estilo para el carrusel -------------------- */
+
+ 
+  .back-principal {
+    padding: 30px;
+    padding-top: 60px;
+    padding-bottom: 40px !important;
+    margin: -20px 0px 0px 0px;
+    background-image: url(img/fondo-primero.png);
+    background-attachment: fixed;
+  }
+  .secciones {
+    display: inline-block;
+  }
+  /*Estilo para el footer de todas las páginas */
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #3d3d3d;
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+    left: 0;
+  }
+  /* Estilo para la cabecera de la Página Principal */
+  .cabecera {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: inline-flex;
+    background-image: url(img/fondo-primero.png);
+    justify-content: center;
+    background-size: 1600px 600px;
+    min-height: 600px;
+    color: #fff;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+#pollos{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    background-image: url(img/fondo-pollos.png);
+    justify-content: center;
+    background-size: 1600px 500px;
+    min-height: 500px;
+    color: #fff;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 40px 10px;
+}
+.titulossec{
+    margin-bottom:40px ;
+}
+
+.combos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.contenedor-combo{
+    background-image: radial-gradient(circle at 60.02% 35.69%, #e4a332 0, #e9972d 12.5%, #ed8b2a 25%, #f07c2a 37.5%, #f26c2b 50%, #f35a2f 62.5%, #f44735 75%, #f42f3d 87.5%, #f40346 100%);
+    border-radius: 15px;
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    width: 25%;
+}
+.imgcombo{
+    margin-top: -20%;
+}
+.imgcombo2{
+    margin-top: 40px;
+    margin-bottom: -30%;
+}
+/*css para los textos de los combos*/
+.textos{
+    font-family: Roboto;
+    margin: 10px;
+}
+.precios{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px;
+    display: flex;
+    text-align: right;
+
+}
+
+  .div_slider {
+    width: 50%;
+    display: flex;
+    align-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .accesosFijos {
+    margin-left: 30px;
+    color: #fff;
+  }
+
+  #paginaPrincipal {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  .carruselPeliculas {
+    display: flex;
+    width: 100%;
+    height: 390px;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: row;
+  }
+  .btnNavegar {
+    background: #d0a50e;
+    color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 8px;
+    font-family: "Mali", cursive;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .btnNavegar:hover,
+  #btnBuscar:hover {
+    background: #e5c348;
+    color: #ffffff;
+  }
+  /* Desde acá comienza el estilo para página de directores */
+  
+  
+  @media (max-width: 768px) {
+    /*Estilo para el header de todas las páginas en dispositivos móviles*/
+    body {
+      padding-top: 50px;
+    }
+    header {
+      height: 50px;
+      width: 100%;
+    }
+    .back-principal {
+      padding-left: 10px;
+      padding-top: 30px;
+    }
+    .cabecera {
+      margin-top: -50px;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+    }
+    .combos{
+        display: block;
+    }
+    
+    .div_slider {
+      display: block;
+    }
+    
+    .subtitulo {
+      display: none;
+    }
+    #iconoHeader {
+      height: 40px;
+      width: auto;
+    }
+    /*---------------Desde acá estoy agregando el estilo para el carrusel -------------------- */
+    #contenedorCarrusel {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+    #contenedorCarrusel .carruselPeliculas {
+      flex-direction: column;
+      gap: 20px;
+      overflow: visible;
+      align-content: center;
+      justify-content: center;
+    }
+    /*---------------Hasta acá estoy agregando el estilo para el carrusel -------------------- */
+    .carruselPeliculas {
+      width: 100%;
+      height: 100%;
+      margin-top: 30px;
+      overflow: visible;
+    }
+    #contenedorCarrusel .flechaIzquierda,
+    #contenedorCarrusel .flechaDerecha {
+      display: none;
+    }
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      background-color: #43587f;
+      position: fixed;
+      top: 50px;
+      width: 80%;
+      padding: 20px 0%;
+      height: calc(35% - 60px);
+      overflow-y: visible;
+      left: 100%;
+      transition: left 0.5s;
+    }
+    .nav-menu-item {
+      line-height: 30px;
+    }
+    .nav-menu-link:hover {
+      background: #d8d3ce;
+      color: #4889ff;
+    }
+    .nav-toggle {
+      display: block;
+      cursor: pointer;
+    }
+    .nav-menu_visible {
+      height: auto;
+      left: 0;
+    }
+    /*Estilo para el footer de todas las páginas en dispositivos móviles*/
+
+
+    footer {
+      height: 20px;
+    }
+  }
+
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+  
