@@ -93,46 +93,46 @@ a {
   }
 
   /*---------------Desde acá estoy agregando el estilo para el carrusel -------------------- */
-  #contenedorCarrusel,
-  .carruselPeliculas {
+#contenedorCarrusel, #contenedorCarrusel2,
+.carruselcombos {
     display: flex;
     align-items: center;
     position: relative;
     padding: auto;
     overflow: hidden;
   }
-  #contenedorCarrusel .flechaIzquierda,
-  #contenedorCarrusel .flechaDerecha {
+.flechaIzquierda,
+.flechaDerecha {
     position: absolute;
     border: none;
     background: rgb(255, 255, 255, 0.3);
     font-size: 40px;
-    height: 35%;
+    height: 20%;
     align-self: center;
     line-height: 40px;
-    width: 50px;
+    width: 30px;
     color: #000;
     cursor: pointer;
     z-index: 100px;
     transition: 0.2s ease all;
   }
-  #contenedorCarrusel .flechaIzquierda {
+.flechaIzquierda {
     left: 0;
   }
-  #contenedorCarrusel .flechaDerecha {
+.flechaDerecha {
     right: 0;
   }
-  #contenedorCarrusel .flechaIzquierda:hover,
-  #contenedorCarrusel .flechaDerecha:hover {
+.flechaIzquierda:hover,
+.flechaDerecha:hover {
     background: rgba(255, 255, 255, 0.7);
     transition: 0.5s;
   }
-  #contenedorCarrusel {
+#contenedorCarrusel , #contenedorCarrusel2{
     height: 100%;
-    width: 70%;
+    width: 80%;
     padding: 20px 0;
   }
-  #contenedorCarrusel .carruselPeliculas {
+.carruselcombos{
     display: flex;
     flex-wrap: nowrap;
     scroll-behavior: smooth;
@@ -140,7 +140,7 @@ a {
   /*---------------Hasta acá estoy agregando el estilo para el carrusel -------------------- */
 
  
-  .back-principal {
+.back-principal {
     padding: 30px;
     padding-top: 60px;
     padding-bottom: 40px !important;
@@ -148,11 +148,11 @@ a {
     background-image: url(img/fondo-primero.png);
     background-attachment: fixed;
   }
-  .secciones {
+.secciones {
     display: inline-block;
   }
   /*Estilo para el footer de todas las páginas */
-  footer {
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,7 +165,7 @@ a {
     left: 0;
   }
   /* Estilo para la cabecera de la Página Principal */
-  .cabecera {
+.cabecera {
     margin-top: 0px;
     margin-bottom: 0px;
     display: inline-flex;
@@ -196,48 +196,80 @@ a {
     flex-wrap: wrap;
     padding: 40px 10px;
 }
+#sandw{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  background-image: url(img/fondo-sandw.png);
+  justify-content: center;
+  background-size: 1600px 500px;
+  min-height: 500px;
+  color: #fff;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 40px 10px;
+}
 .titulossec{
     margin-bottom:40px ;
 }
 
 .combos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .contenedor-combo{
-    background-image: radial-gradient(circle at 60.02% 35.69%, #e4a332 0, #e9972d 12.5%, #ed8b2a 25%, #f07c2a 37.5%, #f26c2b 50%, #f35a2f 62.5%, #f44735 75%, #f42f3d 87.5%, #f40346 100%);
-    border-radius: 15px;
-    margin: 20px 30px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    padding-bottom: 30px;
-    padding-top: 20px;
-    width: 25%;
+  background-image: radial-gradient(circle at 47.32% 19.35%, #dc7100 0, #d86000 12.5%, #d14d00 25%, #c53800 37.5%, #b61f08 50%, #a50010 62.5%, #960015 75%, #870018 87.5%, #7b001b 100%);
+  margin: 20px 40px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 50px;
+  padding-top: 40px;
+  width: 25%;
+}
+.contenedor-combo2{
+  background-image: radial-gradient(circle at 37.95% 67.21%, #dc6f00 0, #d85e00 12.5%, #d04c00 25%, #c53700 37.5%, #b61f08 50%, #a60010 62.5%, #970015 75%, #890018 87.5%, #7c001b 100%);  
+  margin: 20px 40px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 50px;
+  padding-top: 40px;
+  width: 25%;
 }
 .imgcombo{
     margin-top: -20%;
 }
 .imgcombo2{
-    margin-top: 40px;
+    margin-top: 50px;
     margin-bottom: -30%;
 }
 /*css para los textos de los combos*/
 .textos{
     font-family: Roboto;
     margin: 10px;
+    text-align: center;
 }
 .precios{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 5px;
+    margin: 15px 5px;
+    margin-bottom: 40px;
     display: flex;
     text-align: right;
 
@@ -313,9 +345,11 @@ a {
       justify-content: center;
     }
     .combos{
-        display: block;
+        display: flex;
     }
-    
+    .contenedor-combo , .contenedor-combo2{
+      margin: 20px 20px;
+    }
     .div_slider {
       display: block;
     }
@@ -327,32 +361,10 @@ a {
       height: 40px;
       width: auto;
     }
-    /*---------------Desde acá estoy agregando el estilo para el carrusel -------------------- */
-    #contenedorCarrusel {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-    }
-    #contenedorCarrusel .carruselPeliculas {
-      flex-direction: column;
-      gap: 20px;
-      overflow: visible;
-      align-content: center;
-      justify-content: center;
-    }
-    /*---------------Hasta acá estoy agregando el estilo para el carrusel -------------------- */
-    .carruselPeliculas {
-      width: 100%;
+    #contenedorCarrusel{
       height: 100%;
-      margin-top: 30px;
-      overflow: visible;
-    }
-    #contenedorCarrusel .flechaIzquierda,
-    #contenedorCarrusel .flechaDerecha {
-      display: none;
+      width: 100%;
+      padding: 20px 0;
     }
     .nav-menu {
       flex-direction: column;

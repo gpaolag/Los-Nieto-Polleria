@@ -8,8 +8,8 @@ navToggle.addEventListener("click", () => {
 
 
 
-/* Permite el funcionamiento del carrusel  */
-const carrusel = document.querySelector("#carruselPeliculas");
+/* Permite el funcionamiento del carrusel Pollos  */
+const carrusel = document.querySelector("#carrusel-combos");
 const flechaIzq = document.querySelector("#flechaIzquierda");
 const flechaDer = document.querySelector("#flechaDerecha");
 flechaDer.addEventListener("click", () => {
@@ -17,6 +17,19 @@ flechaDer.addEventListener("click", () => {
 });
 flechaIzq.addEventListener("click", () => {
   carrusel.scrollLeft -= carrusel.offsetWidth;
+});
+/*<<<<<<<<<<<<<------>>>>>>>>>>  */
+
+/* Permite el funcionamiento del carrusel sandwiches */
+const carrusel2 = document.querySelector("#carrusel-combos2");
+const flechaIzq2 = document.querySelector("#flechaIzquierda2");
+const flechaDer2 = document.querySelector("#flechaDerecha2");
+flechaDer2.addEventListener("click", () => {
+  console.log("entro");
+  carrusel2.scrollLeft += carrusel.offsetWidth;
+});
+flechaIzq2.addEventListener("click", () => {
+  carrusel2.scrollLeft -= carrusel.offsetWidth;
 });
 /*<<<<<<<<<<<<<------>>>>>>>>>>  */
 
