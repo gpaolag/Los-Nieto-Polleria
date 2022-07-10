@@ -6,7 +6,6 @@
   /* solo para ver el texto hasta que lo acomode */
   /*Estilo para el header de todas las páginas */
 header {
-    font-family: "Mali", cursive;
     background: rgba(233, 232, 244, 0.304);
     position: fixed;
     width: 100%;
@@ -19,11 +18,12 @@ a {
     cursor: pointer;
   }
 .btn-pidelo{
+  font-family: 'Trading post NF';
     background-color: #ea9310;
     border-radius: 15px;
     padding: 10px;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
     border: none;
   }
 .btn-pidelo:hover{
@@ -56,13 +56,16 @@ a {
     text-shadow: 0 0 12px #000, 0 0 15px #0000ff;
   }
   .subtitulo {
-    font-family: "Mali", cursive;
-    font-size: 22px;
+    font-family: 'Trading post NF';
+    font-weight: 400;
+    font-size: 32px;
     padding-left: 20px;
-    text-shadow: 0 0 12px #000, 0 0 15px #0000ff;
+    color: #e4be94;
+    text-shadow: 0 0 12px #000, 0 0 15px #daa439;
+    text-align: center;
   }
-  .nav-menu,
-  .listaDirectores {
+  .nav-menu{
+    font-family: 'Roboto', sans-serif;
     display: flex;
     margin-right: 30px;
     list-style: none;
@@ -170,12 +173,8 @@ footer {
     justify-content: center;
     color: #fff;
     background: #3d3d3d;
-    position: fixed;
-    width: 100%;
-    height: 20px;
-    bottom: 0;
-    left: 0;
-  }
+    flex-direction: column;
+}
   /* Estilo para la cabecera de la Página Principal */
 .cabecera {
     margin-top: 0px;
@@ -244,19 +243,29 @@ footer {
   background-image: url(img/fondo-carta.png);
   justify-content: center;
   padding: 30px 30px;
+  align-items: center;
+  align-content: center;
 }
-#PROMOCIONES{
+#ubicacion{
+  background-image: url(img/fondo-carta.png);
+  justify-content: center;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#promociones{
   margin-top: 0px;
   margin-bottom: 0px;
   display: flex;
   background-color: #160700;
-  justify-content: center;
-  min-height: 800px;
-  color: #fff;
-  min-width: 100vw;
-  padding: 40px 30px;
+  padding: 40px 0px 0px 0px;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  align-content: center;
 }
 .seccarta{
   display: flex;
@@ -265,7 +274,17 @@ footer {
   align-items: center;
   justify-content: space-around;
 }
+.seccarta2{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
 .titulossec{
+  margin-bottom:10px ;
+}
+.titulossec2{
   margin-bottom:10px ;
 }
 
@@ -371,16 +390,21 @@ footer {
 }
 /*css para los textos de los combos*/
 .textos{
-    font-family: Roboto;
-    margin: 10px;
-    text-align: center;
+  font-family: 'Trading post NF';
+  color: #e4be94;
+  margin: 10px;
+  font-weight: 300;
+  text-align: center;
 }
 .precios{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 15px 5px;
-    margin-bottom: 30px;
-    display: flex;
-    text-align: right;
+  font-family: 'Trading post NF';
+  color: #f7eadf;
+  margin: 15px 5px;
+  margin-bottom: 30px;
+  display: flex;
+  text-align: right;
+  font-weight: 500;
+  font-size: 24px;
 
 }
 
@@ -393,36 +417,17 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
 }
-/* Desde acá comienza el estilo para los siders*/
 
-#slide1{
-  background-image: url(img/slide1.png);
-  background-size: 1500px 600px;
-}
-#slide2{
-  background-image: url(img/slide2.png);
-  background-size: 1500px 600px;
-}
-#slide3{
-  background-image: url(img/slide3.png);
-  background-size: 1500px 600px;
-}
-#slide4{
-  background-image: url(img/slide4.png);
-  background-size: 1500px 600px;
-}
-.sliders{
-  min-width: 100vw;
-  min-height: 500px;
+.footercontent{
+  padding: 30px 20px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
-  padding: 30px 30px;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
-  
-  
 @media (max-width: 768px) {
     /*Estilo para el header de todas las páginas en dispositivos móviles*/
   body {
@@ -466,62 +471,114 @@ footer {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    }
-
-
-
-    .div_slider {
+  }
+  .seccarta2{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #ubicacion{
+      display: flex;
+      flex-direction: column;
+  }
+  .imgcarta{
+    max-width: 250px;
+    max-height: 300px;
+  }
+  .div_slider {
       display: block;
     }
-    
-    .subtitulo {
-      display: none;
-    }
-    #iconoHeader {
-      height: 40px;
-      width: auto;
-    }
-    #contenedorCarrusel, #contenedorCarrusel2, 
-    #contenedorCarrusel3{
+  .titulossec2{
+    max-width: 300px;
+    max-height: 100px;
+  }
+
+  #iconoHeader {
+    height: 40px;
+    width: auto;
+   }
+  #contenedorCarrusel, #contenedorCarrusel2, 
+  #contenedorCarrusel3{
       height: 100%;
       width: 100%;
       padding: 20px 0;
-    }
-    .nav-menu {
-      flex-direction: column;
-      align-items: center;
-      background-color: #43587f;
-      position: fixed;
-      top: 50px;
-      width: 80%;
-      padding: 20px 0%;
-      height: calc(35% - 60px);
-      overflow-y: visible;
-      left: 100%;
-      transition: left 0.5s;
-    }
-    .nav-menu-item {
-      line-height: 30px;
-    }
-    .nav-menu-link:hover {
-      background: #d8d3ce;
-      color: #4889ff;
-    }
-    .nav-toggle {
-      display: block;
-      cursor: pointer;
-    }
-    .nav-menu_visible {
-      height: auto;
-      left: 0;
-    }
+  }
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    background-color: #43587f;
+    position: fixed;
+    top: 50px;
+    width: 80%;
+    padding: 20px 0%;
+    height: calc(35% - 60px);
+    overflow-y: visible;
+    left: 100%;
+    transition: left 0.5s;
+  }
+  .nav-menu-item {
+    line-height: 30px;
+  }
+  .nav-menu-link:hover {
+    background: #d8d3ce;
+    color: #4889ff;
+  }
+  .nav-toggle {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-menu_visible {
+    height: auto;
+    left: 0;
+  }
     /*Estilo para el footer de todas las páginas en dispositivos móviles*/
 
 
-    footer {
-      height: 20px;
-    }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+  .footercontent{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+    justify-content: center;
+    align-items: center; 
+    align-content: center;
+  }
+
+  .content_slider h2 {
+	  font-size: 15pt !important;
+	}
+	.content_slider p {
+	  font-size: 12pt !important;
+	}
+	#container-slider .arrowPrev, #container-slider .arrowNext{
+		font-size: 20pt;
+	}
+	#container-slider .arrowPrev{
+		left: 15px;
+	}
+	#container-slider .arrowNext{
+		right: 15px !important;
+	}
+	#slider{
+		height: 400px;
+		min-height: 400px;
+	}
+	#slider li .content_slider{
+		padding: 10px 35px;
+	}
+	.btnSlider{
+		padding: 10px 30px;
+    font-size: 10pt;
+	}
+}
+
 
   
   /* Add Animation */
@@ -545,4 +602,148 @@ footer {
       opacity: 1;
     }
   }
-  
+
+  /* Desde acá comienza el estilo para los siders*/
+.buttonslide{
+  margin-bottom: 60px;
+}
+#container-slider
+{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+#slider {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 95vh;
+    min-height: 500px;
+}
+#slider li {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    height: 100%;
+    display: block;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    z-index: -1;
+    opacity: 0;
+}
+#container-slider .arrowPrev, #container-slider .arrowNext{
+    font-size: 30pt;
+    color: rgba(204, 204, 204, 0.65);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    z-index: 2; 
+}
+#container-slider .arrowNext {
+    left: initial;
+    right: 50px !important;
+}
+.content_slider{
+    padding: 15px 30px;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+}
+.content_slider div{
+    text-align: center;
+}
+.content_slider h2{
+    font-family: 'arial';
+    font-size: 30pt;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.content_slider p {
+    font-size: 15pt;
+    font-family: 'arial';
+    color: #FFF;
+    margin-bottom: 20px;
+}
+#slider li .content_slider{
+    padding: 10px 125px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.content_slider{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnSlider{
+    color: #FFF;
+    font-size: 15pt;
+    font-family: 'arial';
+    letter-spacing: 1px;
+    padding: 10px 50px;
+    border: 1px solid #CCC;
+    background: rgba(13, 13, 13, 0.55);
+    border-radius: 31px;
+    text-decoration: none;
+    transition: .5s all;
+}
+.btnSlider:hover{
+    background: #111;
+    border: 1px solid #111;
+}
+.listslider {
+    position: absolute;
+    display: none;
+    /* display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    bottom: 5%;
+    list-style: none;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+.listslider li {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.listslider li a {
+    background: #CCC;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.item-select-slid {
+    background: #FFF  !important;
+}
+
+/* Theme customization starts here
+  -------------------------------------------------------------- */
+  @font-face {
+    font-family: 'Trading post NF';
+    src: url('./fonts/trading/TradingPostNf-0KYo.ttf') format('truetype'),
+        url('./fonts/trading/Tradingpostnf-eVvg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
