@@ -16,6 +16,8 @@ header {
 }
 a {
   cursor: pointer;
+  color: #160700;
+  text-decoration: none;
 }
 .btn-pidelo {
   font-family: "Trading post NF";
@@ -60,7 +62,7 @@ a {
   font-weight: 800;
   font-size: 50px;
   padding: 20px;
-  color: #d85640;
+  color: #ab2016;
 }
 #contacto i {
   background-color: #ea9310;
@@ -246,7 +248,7 @@ footer {
   display: flex;
   background-image: url(img/fondo-pollos.png);
   justify-content: center;
-  background-size: 1600px 730px;
+  background-size: 1600px 780px;
   min-height: 500px;
   color: #fff;
   width: 100%;
@@ -543,6 +545,14 @@ footer {
   text-align: center;
   font-size: 24px;
 }
+.textos1 {
+  font-family: "Trading post NF";
+  color: #e5b783;
+  margin: 10px;
+  font-weight: 300;
+  text-align: center;
+  font-size: 28px;
+}
 .precios {
   font-family: "Trading post NF";
   color: #f7eadf;
@@ -677,8 +687,8 @@ footer {
     line-height: 30px;
   }
   .nav-menu-link:hover {
-    background: #d8d3ce;
-    color: #4889ff;
+    background: #ab2016;
+    color: #fff;
   }
   .nav-toggle {
     display: block;
