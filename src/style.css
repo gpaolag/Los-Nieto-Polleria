@@ -231,7 +231,7 @@ footer {
   margin-top: 0px;
   margin-bottom: 0px;
   display: inline-flex;
-  background-image: url(img/fondo-primero.png);
+  background-image: url(img/fondo-primero.jpg);
   justify-content: center;
   background-size: 1600px 600px;
   min-height: 600px;
@@ -246,7 +246,7 @@ footer {
   margin-top: 0px;
   margin-bottom: 0px;
   display: flex;
-  background-image: url(img/fondo-pollos.png);
+  background-image: url(img/fondo-pollos.jpg);
   justify-content: center;
   background-size: 1600px 780px;
   min-height: 500px;
@@ -262,7 +262,7 @@ footer {
   margin-top: 0px;
   margin-bottom: 0px;
   display: flex;
-  background-image: url(img/fondo-sandw.png);
+  background-image: url(img/fondo-sandw.jpg);
   justify-content: center;
   background-size: 1600px 800px;
   min-height: 500px;
@@ -278,7 +278,7 @@ footer {
   margin-top: 0px;
   margin-bottom: 0px;
   display: flex;
-  background-image: url(img/fondo-especiales.png);
+  background-image: url(img/fondo-especiales.jpg);
   justify-content: center;
   background-size: 1600px 800px;
   min-height: 500px;
@@ -291,14 +291,14 @@ footer {
   padding: 40px 10px;
 }
 #carta {
-  background-image: url(img/fondo-carta.png);
+  background-image: url(img/fondo-carta.jpg);
   justify-content: center;
   padding: 30px 30px;
   align-items: center;
   align-content: center;
 }
 #ubicacion {
-  background-image: url(img/fondo-carta.png);
+  background-image: url(img/fondo-carta.jpg);
   justify-content: center;
   padding: 30px 30px;
   display: flex;
@@ -608,7 +608,7 @@ footer {
     align-content: center;
     align-items: center;
     justify-content: center;
-    background-image: url(img/sprin.png) !important;
+    background-image: url(img/sprin.jpg) !important;
     background-size: 375px 800px;
   }
   .studio {
@@ -745,27 +745,27 @@ footer {
     font-size: 10pt;
   }
   #s1 {
-    background-image: url("./img/s1.png") !important;
+    background-image: url("./img/s\ \(1\).jpg") !important;
     max-width: 375px;
     background-size: 375px 800px;
   }
   #s2 {
-    background-image: url("./img/s2.png") !important;
+    background-image: url("./img/s\ \(2\).jpg") !important;
     max-width: 375px;
     background-size: 375px 800px;
   }
   #s3 {
-    background-image: url("./img/s3.png") !important;
+    background-image: url("./img/s\ \(3\).jpg") !important;
     max-width: 375px;
     background-size: 375px 800px;
   }
   #s4 {
-    background-image: url("./img/s4.png") !important;
+    background-image: url("./img/s\ \(4\).jpg") !important;
     max-width: 375px;
     background-size: 375px 800px;
   }
   #s5 {
-    background-image: url("./img/s5.png") !important;
+    background-image: url("./img/s\ \(5\).jpg") !important;
     max-width: 375px;
     background-size: 375px 800px;
   }
