@@ -117,7 +117,7 @@ a {
   list-style: none;
 }
 .nav-menu-item {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 600;
   margin: 5px 10px;
   line-height: 60px;
@@ -233,7 +233,7 @@ footer {
   display: inline-flex;
   background-image: url(img/fondo-primero.jpg);
   justify-content: center;
-  background-size: 1600px 600px;
+  background-size: 100vw 600px;
   min-height: 600px;
   color: #fff;
   width: 100%;
@@ -248,7 +248,7 @@ footer {
   display: flex;
   background-image: url(img/fondo-pollos.jpg);
   justify-content: center;
-  background-size: 1600px 780px;
+  background-size: 1600px 880px;
   min-height: 500px;
   color: #fff;
   width: 100%;
@@ -256,7 +256,7 @@ footer {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  padding: 40px 10px;
+  padding: 40px 10px 20px 10px;
 }
 #sandw {
   margin-top: 0px;
@@ -346,7 +346,6 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 80vw;
 }
 .titulossec {
   margin-bottom: 10px;
@@ -359,9 +358,10 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: center;
   align-items: center;
   align-content: center;
+  justify-content: space-around;
+  height: 650px;
 }
 .contenedor-combo {
   background-image: radial-gradient(
@@ -385,7 +385,7 @@ footer {
   align-items: center;
   align-content: center;
   padding-bottom: 50px;
-  padding-top: 20px;
+  padding-top: 0px;
   max-width: 20%;
 }
 .contenedor-combo2 {
@@ -437,7 +437,7 @@ footer {
   align-items: center;
   align-content: center;
   padding-bottom: 50px;
-  padding-top: 10px;
+  padding-top: 40px;
   width: 25%;
 }
 .contenedor-combo4 {
@@ -522,7 +522,7 @@ footer {
   width: 25%;
 }
 .imgcombo {
-  margin-top: -20%;
+  margin-top: -30%;
 }
 .imgcombo2 {
   margin-top: 50px;
@@ -584,6 +584,22 @@ footer {
   width: 100%;
 }
 
+.copy {
+  font-family: "Raleway";
+  font-size: 14px;
+}
+
+.foot {
+  background-color: #262525;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.foot a {
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   /*Estilo para el header de todas las páginas en dispositivos móviles*/
   body {
@@ -609,7 +625,7 @@ footer {
     align-items: center;
     justify-content: center;
     background-image: url(img/sprin.jpg) !important;
-    background-size: 375px 800px;
+    background-size: 100vw 800px;
   }
   .studio {
     font-size: 40px;
@@ -619,7 +635,7 @@ footer {
   }
   .contenedor-combo,
   .contenedor-combo2 {
-    margin: 20px 20px;
+    margin: 20px 30px 20px 35px;
   }
   .contenedor-combo3,
   .contenedor-combo4 {
