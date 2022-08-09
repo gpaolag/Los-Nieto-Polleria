@@ -517,8 +517,8 @@ footer {
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding-bottom: 60px;
+  padding-top: 70px;
   width: 25%;
 }
 .imgcombo {
@@ -604,6 +604,10 @@ footer {
   /*Estilo para el header de todas las páginas en dispositivos móviles*/
   body {
     padding-top: 50px;
+  }
+  #slider li .content_slider {
+    padding: 0px 0px;
+    width: 100vw;
   }
   .imgdiv {
     display: flex;
@@ -694,7 +698,7 @@ footer {
     align-items: center;
     background-color: #e4be94;
     position: fixed;
-    top: 50px;
+    top: 80px;
     width: 80%;
     padding: 20px 0%;
     height: calc(35% - 60px);
@@ -715,7 +719,7 @@ footer {
   }
   .nav-menu_visible {
     height: auto;
-    left: 0;
+    left: 20%;
   }
   /*Estilo para el footer de todas las páginas en dispositivos móviles*/
 
