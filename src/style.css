@@ -480,7 +480,7 @@ footer {
     #890018 87.5%,
     #7c001b 100%
   );
-  margin: 20px 35px;
+  margin: 20px 38px;
   border-radius: 50px;
   padding-left: 20px;
   padding-right: 20px;
@@ -492,7 +492,7 @@ footer {
   align-content: center;
   padding-bottom: 40px;
   padding-top: 0px;
-  width: 25%;
+  min-width: 21%;
 }
 .contenedor-combo6 {
   background-image: radial-gradient(
@@ -517,9 +517,9 @@ footer {
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding-bottom: 60px;
-  padding-top: 70px;
-  width: 25%;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  min-width: 303px;
 }
 .imgcombo {
   margin-top: -30%;
